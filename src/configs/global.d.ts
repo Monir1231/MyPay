@@ -1,0 +1,3 @@
+type samething ={
+  name: string
+}
