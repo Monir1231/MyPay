@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter,Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Inter,Poppins,Plus_Jakarta_Sans,DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/shared/widgets/header/Header";
 
@@ -18,6 +18,19 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const plusjakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
+  subsets: ["latin"],
+   weight:["200","300","400","500","600","700","800",]
+});
+
+const dmsans = DM_Sans({
+  variable: "--font-dm_sans",
+  subsets: ["latin"],
+   weight:["200","300","400","500","600","700","800",]
+});
+
 
 const poppeins = Poppins({
   variable: "--font-poppeins",
@@ -42,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppeins.variable}  antialiased `} 
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppeins.variable} ${plusjakartaSans.variable} ${dmsans.variable}  antialiased  bg-[#00020D]`} 
       >
            <Header/>
         

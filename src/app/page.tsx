@@ -1,14 +1,13 @@
 import React from 'react'
-import HeroPage from '@/shared/Modules/hero/Hero'
+import Homepage from '@/shared/Modules/main/Home'
 
 const page = () => {
   return (
     <div  >
-    <HeroPage />
-     
 
+    <Homepage/>
     </div>
   )
 }
 
-export default page
+export default Homepage
