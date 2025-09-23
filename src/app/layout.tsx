@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter,Poppins,Plus_Jakarta_Sans,DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/shared/widgets/header/Header";
+import FooterPage from "@/shared/Modules/Footer/FooterPage";
 
 
 const geistSans = Geist({
@@ -55,11 +56,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppeins.variable} ${plusjakartaSans.variable} ${dmsans.variable}  antialiased  bg-[#00020D]`} 
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppeins.variable} ${plusjakartaSans.variable} ${dmsans.variable}  antialiased  bg-[#00020D] w-full h-full`} 
       >
            <Header/>
-        
         {children}
+        <FooterPage />
+  
       </body>
     </html>
   );

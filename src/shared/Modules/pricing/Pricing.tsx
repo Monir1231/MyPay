@@ -32,8 +32,8 @@ const Pricingpage = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
       </p>
       {/* pricing box  */}
-      <div className=" md:w-[95%]  flex  my-6 m-auto">
-        <div className="w-[55%] h-max relative z-40 bg-white/20 rounded-xl bg-clip-padding backdrop-blur-[100px] border-2 border-[#4b85FC] before:absolute before:inset-0 before:rounded-xl before: bg-gradient-to-r before:from-[#4b86coe] before:to-[#75f2f631] before:-z-10">
+      <div className=" md:w-[95%]   flex flex-col md:flex-row gap-10 md:gap-0 my-6 m-auto">
+        <div className="md:w-[55%] w-full h-max relative z-40 bg-white/20 rounded-xl bg-clip-padding backdrop-blur-[100px] border-2 border-[#4b85FC] before:absolute before:inset-0 before:rounded-xl before: bg-gradient-to-r before:from-[#4b86coe] before:to-[#75f2f631] before:-z-10">
           <div className="p-6">
             <div className="w-full text-center">
               <button className=" bg-gradient-to-r h-[54px] w-[173px] rounded-[30px] from-[#4b86fc] text-lg font-Jakarta-Sans font-[600] to-[#75f2f6] text-[#000]">
@@ -67,7 +67,7 @@ const Pricingpage = () => {
           </div>
         </div>
         {/* right part  */}
-        <div className="w-[45%] ml-[-2] mt-[-1.5%] bg-hero-gradiant relative rounded-xl">
+        <div className=" md:w-[45%] w-full ml-[-2] mt-[-1.5%] bg-hero-gradiant relative rounded-xl">
         <div className="p-4 w-full relative z-20">
         <div className="w-full text-center">
           <button className="bg-gradient-to-r h-[54px] w-[173px] rounded-[30px] from-[#4B86FC] text-lg font-Jakarta-Sans font-[600] to-[#75F2F6] text-[#000]">

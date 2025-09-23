@@ -6,9 +6,9 @@ import Arrow from "@/assiets/svgs/Arrow";
 
 const HeroPage = () => {
   return (
-    <div className="w-full px-2 md:px-10 h-[90vh] md:flex items-center bg-hero-gradiant relative ">
+    <div className="w-full px-2 md:px-10 h-[90vh] flex flex-col md:flex-row items-center bg-hero-gradiant relative ">
       {/* left  */}
-      <div className="md:w-[50%] w-full relative z-10 md:pt-52 pt-36 ">
+      <div className="md:w-[50%] w-full relative z-10 md:pt-52  pt-36 ">
         <h1 className="lg:text-5xl md:text-4xl text-[30px] font-poppeins font-[700] md:leading-[70px] md:max-w-[711px]">
           <span className=" text-[#4B86FC] "> MyPay</span> Plateforme de gestion
           de paiements en ligne pour business High-Risk.
@@ -26,12 +26,13 @@ const HeroPage = () => {
         </button>
       </div>
         {/* right */}
-        <div  className=" md:w-[50%] w-full items-center justify-center relative z-10 md:pt-52 pt-36  ">
-         
-          
-            <Herocharacter/>
+        <div  className=" md:w-[50%] w-full items-center justify-center relative z-10 md:pt-52 py-20  ">
+        
+           
+             <Herocharacter/>
        
-           <div className=" absolute right-[-5%] top-[70%]">
+       
+           <div className=" absolute md:right-[-5%] md:top-[63%]  ">
             <Herohandcharacter/>
           </div>
         </div>

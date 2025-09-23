@@ -39,7 +39,7 @@ body {
   
 }
 
-.bg-hero-gradiant{
+.bg-hero-gradiant,.bg-from-gradient{
   background: url();  background-image: url("https://res.cloudinary.com/dkg6jv4l0/image/upload/v1741463740/oyc7wnuosrnwjwhrark3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,3 +58,30 @@ body {
   z-index: 1;
 }
 
+.bg-from-gradient::before{
+   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: rgba(0,0,0,0.70);
+  z-index: 1;
+}
+
+.gradient-input {
+  background: linear-gradient(
+    144.39deg,
+    rgba(255, 255, 255, 0.4) -278.56%,
+    rgba(109, 109, 109, 0.4) -78.47%,
+    rgba(17, 16, 29, 0.4) 122.61%
+  );
+  border-radius: 8px;
+  padding: 16px;
+  color: white;
+  outline: none;
+}
+.gradient-input::placeholder {
+  color: white;
+}
