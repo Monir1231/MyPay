@@ -9,7 +9,7 @@ import EmailIcon from '@/assiets/svgs/EmailIcon'
 import { SubmitHandler,useForm } from 'react-hook-form'
 import Arrow from '@/assiets/svgs/Arrow'
 
-type FromData ={
+type FormData ={
   firstName:string;
   lastName:string;
   email:string;
@@ -26,7 +26,7 @@ const Page = () => {
 
    } = useForm<FormData>();
 
-   const onSubmiter:SubmitHandler<FromData> = (data) =>{
+   const onSubmiter:SubmitHandler<FormData> = (data) =>{
     console.log(data)
    }
   
